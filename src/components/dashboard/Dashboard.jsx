@@ -102,7 +102,7 @@ const Dashboard = ({onAddStock}) => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
           <DashboardCard
             title="Total Investment"
-            value={`$${totalValue.toFixed(2)}`}
+            value={`\u20B9${totalValue.toFixed(2)}`}
             icon={DollarSign}
           />
           <DashboardCard
@@ -174,7 +174,7 @@ const Dashboard = ({onAddStock}) => {
                   {portfolio.map((stock) => (
                     <tr key={stock.symbol} className="border-b border-border">
                       <td className="p-2 font-medium">{stock.symbol}</td>
-                      <td className="p-2 text-right">${stock.price}</td>
+                      <td className="p-2 text-right">&#8377;{stock.price}</td>
                       <td
                         className={`p-2 text-right ${parseFloat(stock.change) >= 0 ? 'text-green-500' : 'text-red-500'}`}
                       >
@@ -183,7 +183,7 @@ const Dashboard = ({onAddStock}) => {
                       </td>
                       <td className="p-2 text-right">{stock.quantity}</td>
                       <td className="p-2 text-right">
-                        ${(parseFloat(stock.price) * stock.quantity).toFixed(2)}
+                      &#8377;{(parseFloat(stock.price) * stock.quantity).toFixed(2)}
                       </td>
                     </tr>
                   ))}
