@@ -1,6 +1,26 @@
-# React + Vite
+# Portfolio Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Steps to Run the Project Locally
+
+Frontend
+
+1.Clone the frontend repository:
+
+git clone https://github.com/HardeepSingh48/portfolioTrackers-Frontend.git
+
+2.Navigate to the project directory:
+
+cd portfolioTrackers-Frontend
+
+3.Install dependencies:
+
+npm install
+
+4.Start the development server:
+
+npm run dev
+
+
 
 Currently, two official plugins are available:
 
