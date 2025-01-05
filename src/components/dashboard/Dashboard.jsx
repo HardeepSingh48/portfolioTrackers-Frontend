@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
-import { TrendingUp, TrendingDown, DollarSign, Activity, Settings, Plus } from 'lucide-react';
+import { TrendingUp, TrendingDown, DollarSign, Activity, Settings, Plus, IndianRupeeIcon } from 'lucide-react';
 
 const STOCK_POOL = [
   'AAPL', 'GOOGL', 'MSFT', 'AMZN', 'META', 'NVDA', 'TSLA', 'JPM', 'V', 'WMT',
@@ -103,7 +103,7 @@ const Dashboard = ({onAddStock}) => {
           <DashboardCard
             title="Total Investment"
             value={`\u20B9${totalValue.toFixed(2)}`}
-            icon={DollarSign}
+            icon={IndianRupeeIcon}
           />
           <DashboardCard
             title="Portfolio Performance"
